@@ -1,0 +1,85 @@
+/* General styling */
+body {
+    font-family: 'Georgia', serif;  /* Traditional, cultural font */
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    display: block; 
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/fablesbg1.png') no-repeat center center fixed; /* Fixed background */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    color: #ffffff; /* White text color for readability */
+}
+
+/* Heading styling */
+h2 {
+    color: #ffffff; /* White text */
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #ffffff; /* White text */
+    padding: 8px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for nav items */
+}
+
+.navbar a:hover {
+    background-color: #b38c4d; /* Darker gold on hover */
+}
+
+.navbar a:active {
+    background-color: #8b5e29; /* Deep golden-brown when clicked */
+}
+
+/* Logo styling */
+.logo {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.menu {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    h2 {
+        width: 80%;
+        font-size: 28px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+        padding: 12px 20px;
+    }
+}

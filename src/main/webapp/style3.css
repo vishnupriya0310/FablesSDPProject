@@ -1,0 +1,73 @@
+/* Sidebar styling */
+.sidebar {
+    padding: 20px;
+    height: calc(100vh - 56px); /* Adjust height based on navbar height */
+    width: 250px; /* Fixed width for the sidebar */
+    position: fixed; /* Fixed position for the sidebar */
+    top: 96px; /* Position it below the navbar */
+    left: 0; /* Align to the left */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
+    transform: translateX(-100%); /* Initially hide the sidebar off-screen */
+}
+
+/* Sidebar link styling */
+
+.sidebar .toggle-btn {
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.sidebar a {
+    padding: 15px 20px; /* Spacing inside each link */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for links */
+    color: #ffffff; /* White color for text for better contrast */
+    display: block; /* Make links block elements */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for sidebar links */
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background on hover */
+    color: #ff9658; /* Warm orange text color on hover */
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute; /* Position the close button */
+    top: 10px; /* Position from the top */
+    right: 20px; /* Position from the right */
+    font-size: 30px; /* Font size for close button */
+    color: #ffffff; /* White color for close button */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: #ff9658; /* Warm orange color on hover */
+}
+
+/* Open the sidebar */
+.sidebar.open {
+    transform: translateX(0); /* Bring sidebar into view */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 200px; /* Reduce sidebar width on smaller screens */
+    }
+
+    .sidebar a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}

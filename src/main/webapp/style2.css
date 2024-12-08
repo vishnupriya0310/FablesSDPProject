@@ -1,0 +1,60 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px;
+    color: #333;
+}
+p
+{
+	color:black;
+}
+
+h1 {
+    color: black; /* Dark green */
+    text-shadow: none; /* Removed gold shimmer effect */
+    margin-bottom: 30px;
+        text-shadow: 2px 2px 4px white; /* Soft golden glow */
+    
+}
+
+.message-container {
+    background-color:  rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: white;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.message-container c:out {
+    font-size: 30px;
+    color: white; /* Changed orange text to white */
+}
+
+/* Link styling */
+.message-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9658; /* Orange background */
+    color: white; /* White text */
+    text-decoration: none; /* Removed underline */
+    border-radius: 4px;
+    border: 2px solid transparent; /* Optional: you can define a border color if needed */
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.message-container a:hover {
+    background-color: #ff9558; /* Slightly darker orange on hover */
+    box-shadow: none; /* Removed glow effect */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+}
